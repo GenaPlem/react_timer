@@ -19,6 +19,14 @@ export const Timer = () => {
         }
     };
 
+    useEffect(() => {
+        return () => {
+            if (intervalRef.current !== null) {
+                clearInterval(intervalRef.current);
+            }
+        }
+    }, []);
+
     return (
         <>
             <p>{timerValue}</p>

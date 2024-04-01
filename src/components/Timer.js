@@ -39,7 +39,7 @@ export const Timer = () => {
 
     return (
         <>
-            <p>{timerValue}</p>
+            <h1>{timerValue}</h1>
             <button onClick={handleStart}>Start</button>
             <button onClick={handleStop}>Stop</button>
             <button onClick={handleReset}>Reset</button>

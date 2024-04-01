@@ -1,0 +1,16 @@
+$primary-color: #12130F;
+$secondary-color: #E8E9F3;
+$cta-color: #F03A47;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    color: $primary-color;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

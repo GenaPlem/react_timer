@@ -19,6 +19,14 @@ export const Timer = () => {
         }
     };
 
+    const handleReset = () => {
+        if (intervalRef.current !== null) {
+            clearInterval(intervalRef.current);
+            intervalRef.current = null;
+            setTimerValue(0);
+        }
+    }
+
     useEffect(() => {
         return () => {
             if (intervalRef.current !== null) {
@@ -32,6 +40,7 @@ export const Timer = () => {
             <p>{timerValue}</p>
             <button onClick={handleStart}>Start</button>
             <button onClick={handleStop}>Stop</button>
+            <button onClick={handleReset}>Reset</button>
         </>
     )
 }

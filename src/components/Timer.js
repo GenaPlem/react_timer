@@ -24,6 +24,8 @@ export const Timer = () => {
             clearInterval(intervalRef.current);
             intervalRef.current = null;
             setTimerValue(0);
+        } else {
+            setTimerValue(0);
         }
     }
 

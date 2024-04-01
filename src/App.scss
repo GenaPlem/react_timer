@@ -1,6 +1,7 @@
 $primary-color: #12130F;
 $secondary-color: #E8E9F3;
-$cta-color: #F03A47;
+$cta-color: #F03A10;
+$cta-active-color: #F03A67;
 
 * {
     box-sizing: border-box;
@@ -13,4 +14,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    background-color: $cta-color;
+    border: 1px solid;
+    border-radius: 0.3rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(105%);
+    }
+
+    &:active {
+        background-color: $cta-active-color;
+    }
 }

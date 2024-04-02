@@ -9,10 +9,10 @@ export const Timer = () => {
     const handleStart = () => {
         if (!intervalRef.current) {
             const now = Date.now();
-            startTimeRef.current = now - elapsedTime; // Устанавливаем начальное время с учётом прошедшего
+            startTimeRef.current = now - elapsedTime;
             intervalRef.current = setInterval(() => {
                 setElapsedTime(Date.now() - startTimeRef.current);
-            }, 1000);
+            }, 100);
         }
     };
 
